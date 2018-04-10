@@ -15,7 +15,18 @@ header {
 
 h1 {
     color: #FFFFFF;
-   font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 500%;
+}
+
+h2 {
+    color: #e3deb3;
+    font-family: 'Lato';
+    font-size: 80%;
+}
+
+strong {
+    color: white;  
 }
 
 /* media query when the media is wider than 992px */
@@ -34,10 +45,10 @@ section {
 }
 
 a {
-  color: #0089c3;
+  color: #e3deb3;
   font-weight: bold;
-  font-size: 120%;
-  font-family: 'Nanum Pen Script', cursive;
+  font-size: 100%;
+  font-family: 'Lato';
 }
 
 a:hover {
