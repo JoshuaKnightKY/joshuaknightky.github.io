@@ -20,13 +20,14 @@ h1 {
 }
 
 h2 {
-    color: #e3deb3;
+    color: #f0dec9;
     font-family: 'Lato';
-    font-size: 80%;
+    font-size: 100%;
+    font-weight: bolder;
 }
 
 strong {
-    color: white;  
+    color: white;
 }
 
 /* media query when the media is wider than 992px */
@@ -45,7 +46,7 @@ section {
 }
 
 a {
-  color: #e3deb3;
+  color: #aec5eb;
   font-weight: bold;
   font-size: 100%;
   font-family: 'Lato';
@@ -53,4 +54,5 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #64a6bd;
 }
