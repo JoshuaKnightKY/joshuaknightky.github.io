@@ -5,29 +5,77 @@
  */
 
 body {
-   font-family: 'Lato';
+   font-family: 'Plus Jakarta Sans'
+   font-weight: 100;
 }
 
 header {
   padding: 154px 0 100px;
-  background-color: #00000;
+  background-color: #FFFFFF;
 }
 
+.castoro-regular {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.castoro-regular-italic {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
 h1 {
-    color: #FFFFFF;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 500%;
+    color: #000000;
+    font-family: "Castoro", serif; !important;
+    font-weight: 400; !important;
+    font-style: normal; !important;
 }
 
 h2 {
-    color: #f0dec9;
-    font-family: 'Lato';
-    font-size: 100%;
-    font-weight: bolder;
+    color: #e5e5e5;
+    font-family: "Castoro", cursive;
+    font-weight: 400;
+    font-size: 200%;
+    font-style: normal;
+    text-shadow: 1px 1px #000000;
 }
 
-strong {
-    color: white;
+h3 {
+    color: #023047;
+    font-family: "Castoro", cursive;
+    font-weight: 200;
+    font-size: 100%;
+    font-style: normal;
+}
+
+h6 {
+    color: #FFFFFF;
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400%;
+    text-shadow: 1.5px 1.5px #000000;
+}
+
+h7 {
+    text-shadow: 1.5px 1.5px #000000;
+}
+
+a {
+  color: #2176ae; !important;
+  font-weight: bold; !important;
+  font-size: 110%; !important;
+  font-family: "Castoro", cursive; !important;
+  text-decoration: none; !important;
+}
+
+a:hover {
+  text-decoration: none; !important;
+  color: #8ecae6; !important;
 }
 
 /* media query when the media is wider than 992px */
@@ -45,14 +93,4 @@ section {
   padding: 80px 0;
 }
 
-a {
-  color: #aec5eb;
-  font-weight: bold;
-  font-size: 100%;
-  font-family: 'Lato';
-}
-
-a:hover {
-  text-decoration: none;
-  color: #64a6bd;
-}
+background-image: var(--bs-gradient);

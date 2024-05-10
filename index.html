@@ -5,19 +5,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="This is a professional portfolio of digital cartography projects.">
+    <meta name="author" content="Joshua Knight">
 
     <title>A Portfolio of Digital Cartography</title>
 
     <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome CSS from CDN -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Google web font -->
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script|Lato" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Patrick+Hand+SC&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
@@ -27,16 +26,19 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">A Portfolio of Digital Cartography</a>
+        <a class="navbar-brand js-scroll-trigger mr-auto" href="#page-top">Top</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+              <a class="nav-link js-scroll-trigger" href="#static">Static</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#interactive">Interactive</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -46,17 +48,17 @@
       </div>
     </nav>
 
-    <!-- Welcome Section -->
-    <header>
-      <div class="container text-center">
-        <h1>views from above</h1>
-        <p class="lead">built for sharing projects generated <br>in the <a href="https://newmapsplus.uky.edu/">New Maps Plus</a> graduate program <br>at the <a href="http://www.uky.edu">University of Kentucky</a></p>
-      </div>
+<!-- Welcome Section -->
+    <header class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('../images/jumbotron-ortho.jpg'); background-size: 100vw; height: 100vh">
+        <h6>views from above</h6>
+        <div class="text-white shadow-1-strong rounded"><h7>built for sharing personal and professional digital mapping projects</h7></div>
+<!-- Jumbotron -->
     </header>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-light">
+    <section id="static" class="bg-light bg-gradient">
       <div class="container">
+        <h2>Static & Printable Maps</h1>
         <div class="row">
           <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
@@ -69,7 +71,7 @@
                   a trail marker over the <strong>classic, hand drawn map</strong> by <a href="https://en.wikipedia.org/wiki/Erwin_Raisz">Erwin Raisz</a>,
                   which was <strong>georeferenced</strong> in QGIS (2.14.19-Essen) using the
                   <a href="https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_georeferencer.html">GDAL Georeferencer</a>.<br>
-                  <h2>Format: <br>11.69" x 8.26" (PDF)</h2></p>
+                  <h3>Format: <br>11.69" x 8.26" (PDF)</h3></p>
               </div>
             </div>
           </div>
@@ -81,7 +83,7 @@
                   <a target="_blank" href="../images/North American Breweries.pdf">Brewery Density of North America</a>
                 </h4>
                 <p class="card-text">Using brewery location data from <a href="http://www.poi-factory.com/">The POI Factory</a> accessed February 6, 2017
-                  and generating <strong>50km hexgrids</strong> in QGIS, this map shows the density of breweries across all of North America.<br><h2>Format: <br>20" x 15" (PDF)</h2></p>
+                  and generating <strong>50km hexgrids</strong> in QGIS, this map shows the density of breweries across all of North America.<br><h3>Format: <br>20" x 15" (PDF)</h3></p>
               </div>
             </div>
           </div>
@@ -94,7 +96,7 @@
                 </h4>
                 <p class="card-text">Data downloaded from the <a href="http://www.statecancerprofiles.cancer.gov/">National Cancer Institute's State Cancer Profiles</a> including
                   <strong>age-adjusted rates</strong> were <strong>normalized</strong> and combined with 5-year trends to develop this <strong>interactive chloropleth map</strong>.
-                  <strong>Clicking</strong> on individual counties provides detailed information.  <br><h2>Format: <br>(CARTO)</h2></p>
+                  <strong>Clicking</strong> on individual counties provides detailed information.  <br><h3>Format: <br>(CARTO)</h3></p>
               </div>
             </div>
           </div>
@@ -108,7 +110,7 @@
                 <p class="card-text">Spatial wildfire occurrence data from the <a href="http://dx.doi.org/10.2737/RDS-2013-0009.3">U.S. Forest Service Research Data Archive</a>
                   has been analyzed, generating an <strong>interactive map</strong> to compare percentages of total burned acreages per county to total county area in 2013.
                   At higher levels of zoom, <strong>specific locations of wildfires</strong> become visible with more detailed information available upon <strong>clicking</strong>.
-                  <br><h2>Format: <br>(CARTO)</h2></p>
+                  <br><h3>Format: <br>(CARTO)</h3></p>
               </div>
             </div>
           </div>
@@ -121,7 +123,7 @@
                 </h4>
                 <p class="card-text">Data from the <a href="https://nationalmap.gov/small_scale/">National Atlas of the United States</a>, March 2016, 2nd. edition was used to map
                   <strong>water bodies</strong>, <strong>urbanized areas</strong>, and <strong>streams</strong> classified by <a href="https://en.wikipedia.org/wiki/Strahler_number">Strahler ranking</a>.
-                  <br><h2>Format:<br>30" x 15" (PDF)</h2></p>
+                  <br><h3>Format:<br>30" x 15" (PDF)</h3></p>
               </div>
             </div>
           </div>
@@ -133,7 +135,7 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/strip-and-frack/">Strip & Frack</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> and <strong>color-coded map</strong> shows powerplants using natural gas and coal to produce
-                  energy across the U.S.<br><h2>Format:<br>(JS, CSS and HTML)</h2></p>
+                  energy across the U.S.<br><h3>Format:<br>(JS, CSS and HTML)</h3></p>
               </div>
             </div>
           </div>
@@ -145,7 +147,7 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/alone-in-georgia/">Living Alone in Georgia</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> and <strong>chloropleth map</strong> shows <strong>county-level census data</strong> of married and households living alone
-                  across Georgia with criteria selected from a dropdown box.<br><h2>Format:<br>(JS, CSS and HTML)</h2></p>
+                  across Georgia with criteria selected from a dropdown box.<br><h3>Format:<br>(JS, CSS and HTML)</h3></p>
               </div>
             </div>
           </div>
@@ -157,7 +159,7 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/amenities-of-denver/">Amenities of Denver</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> and <strong>color-coded map</strong> shows <strong>Fire Stations</strong>, <strong>Food Stores</strong>, and <strong>After School Programs</strong>
-                  across the city of Denver.<br><h2>Format:<br>(JS, CSS and HTML)</h2></p>
+                  across the city of Denver.<br><h3>Format:<br>(JS, CSS and HTML)</h3></p>
               </div>
             </div>
           </div>
@@ -169,7 +171,7 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/temporal-maps/kenya/">School Enrollment in Kenya over Time</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> and <strong>color-coded, temporal map</strong> shows <strong>School Enrollment</strong> by <strong>County</strong> and <strong>Gender</strong> over <strong>Time</strong>.
-                  across the country of Kenya.<br><h2>Format:<br>(JS, CSS and HTML)</h2></p>
+                  across the country of Kenya.<br><h3>Format:<br>(JS, CSS and HTML)</h3></p>
               </div>
             </div>
           </div>
@@ -181,7 +183,7 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/temporal-maps/diabetes/">Diabetes Mortality Rate over Time</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> and <strong>color-coded, temporal map</strong> shows the <strong>Mortality Rate</strong> per 100k people by <strong>Sex</strong> over <strong>Time</strong>
-                  in several large urban areas.  <br><h2>Format:<br>(JS, CSS and HTML)</h2></p>
+                  in several large urban areas.  <br><h3>Format:<br>(JS, CSS and HTML)</h3></p>
               </div>
             </div>
           </div>
@@ -193,7 +195,7 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/coves-and-conservation/">Coves and Conservation of Martha's Vineyard</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> and <strong>color-coded</strong> shows the <strong>coves</strong> and <strong>conservation areas</strong> on the island of Martha's Vineyard.
-                    As the features are overlayed onto <strong>satellite imagery</strong>, users can select the colors to represent features and improve visibility.  <br><h2>Format:<br>(JS, CSS, CartoDB API, and HTML)</h2></p>
+                    As the features are overlayed onto <strong>satellite imagery</strong>, users can select the colors to represent features and improve visibility.  <br><h3>Format:<br>(JS, CSS, CartoDB API, and HTML)</h3></p>
               </div>
             </div>
           </div>
@@ -205,7 +207,7 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/hort-directory/">Geographic Horticultural Directory of Kentucky</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> map shows <strong>Horticultural Resources</strong> across the <strong>Commonwealth of Kentucky</strong>.
-                  <br><h2>Format:<br>(JS, CSS and HTML)</h2></p>
+                  <br><h3>Format:<br>(JS, CSS and HTML)</h3></p>
               </div>
             </div>
           </div>
@@ -217,7 +219,30 @@
                   <a target="_blank" href="https://joshuaknightky.github.io/greenhouse-emitters/">Greenhouse Gas Emitters in the United States</a>
                 </h4>
                 <p class="card-text">This <strong>interactive</strong> and <strong>color-coded</strong> by <strong>industry</strong> shows <strong>greenhouse gas emissions</strong> across the United States.
-                    Moving the tooltip over the <strong>self-reporting facilities</strong>, users can see more specific information.  <br><h2>Format:<br>(JS, CSS, d3, and HTML)</h2></p>
+                    Moving the tooltip over the <strong>self-reporting facilities</strong>, users can see more specific information.  <br><h3>Format:<br>(JS, CSS, d3, and HTML)</h3></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interactive" class="bg-secondary bg-gradient">
+      <div class="container">
+        <h2>Interactive Maps</h1>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+              <a target="_blank" href="../images/Appalachian Trail.pdf"><img class="card-img-top" src="../images/ATthumb.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a target="_blank" href="../images/Appalachian Trail.pdf">Appalachian Trail in Georgia, Tennessee and North Carolina</a>
+                </h4>
+                <p class="card-text">Data from the <a href="http://www.appalachiantrail.org/">Appalachian Trail Conservancy</a> was used to overlay
+                  a trail marker over the <strong>classic, hand drawn map</strong> by <a href="https://en.wikipedia.org/wiki/Erwin_Raisz">Erwin Raisz</a>,
+                  which was <strong>georeferenced</strong> in QGIS (2.14.19-Essen) using the
+                  <a href="https://docs.qgis.org/2.8/en/docs/user_manual/plugins/plugins_georeferencer.html">GDAL Georeferencer</a>.<br>
+                  <h3>Format: <br>11.69" x 8.26" (PDF)</h3></p>
               </div>
             </div>
           </div>
@@ -226,16 +251,16 @@
     </section>
 
    <!-- About Section -->
-   <section id="about">
+   <section id="about" class="big-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <h1>About me</h1>
+            <h2>About me</h1>
             <div class='my-5 clearfix'>
-              <div class="float-md-left mb-5 mr-md-4"><img class="rounded-circle img-fluid" src="../images/me.png" alt=""></div>
-              <p class="lead">My name is Joshua Knight. I am a Senior Extension Associate for the <a href="http://www.uky.edu/ccd/">Center for Crop Diversification</a>
-              at the University of Kentucky <a href="https://www.ca.uky.edu/">College of Agriculture, Food and Environment</a>.  I develop curriculum and support tools to facilitate the communication
-            of information relevant to individuals and organizations engaged in horticultural activity across the Commonwealth of Kentucky.</p>
+              <div class="mb-5 mr-md-4 d-flex justify-content-center align-items-center"><img src="../images/vector-beardy.jpg" alt="" align="left" height="125" style="border:10px solid white">
+              My name is Joshua Knight. I have been a Senior Extension Associate for the Center for Crop Diversification at the University of Kentucky College of Agriculture, Food and Environment
+              since 2018.  I develop programming, educational resources, and decision support tools as part of the Cooperative Extension Service mission to improve the lives
+              of the people of the Commonwealth of Kentucky.</div>
             </div>
           </div>
         </div>
@@ -244,20 +269,22 @@
             <h1>Skills</h1>
             <dl>
                 <dt><strong>GIS</strong></dt>
-                <dd>QGIS for data analysis, manipulation, and, format conversion</dd>
-                <dd>ArcMap for LiDAR rasterization and small watershed analysis</dd>
+                <dd>QGIS for data analysis, processing, visualization and format conversion</dd>
                 <dd>SQL for data querying</dd>
                 <dt><strong>Web Mapping</strong></dt>
                 <dd>Leaflet for raster tilesets, basic thematic mapping, and telling stories with maps</dd>
                 <dt><strong>Coding</strong></dt>
                 <dd>JavaScript, HTML, CSS</dd>
+                <dt><strong>Design</strong></dt>
+                <dd>Aerilod for 3D rendering</dd>
+                <dd>Photoshop for final touches</dd>
                 </dl>
           </div>
           <div class="col-md-6">
               <h1>Get in touch!</h1>
               <ul class="list-unstyled">
                   <li class=" mr-2"><i class="fa fa-github mr-2"></i><a target="_blank" href="https://github.com/joshuaknightKY">JoshuaKnightKY</a></li>
-                  <li class=""><i class="fa fa-envelope mr-2"></i><a href="mailto:joshua.knight@uky.edu">joshua.knight@uky.edu</a></li>
+                  <li class=""><i class="fa fa-envelope mr-2"></i><a href="mailto:joshua.knight@uky.edu">josh.p.knight@gmail.com</a></li>
               </ul>
           </div>
         </div>
@@ -265,9 +292,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Joshua Knight 2018</p>
+    <footer class="py-5 bg-dark bg-gradient">
+      <div class="container d-flex justify-content-center align-items-center">
+        <h3 style="color: #e5e5e5">Copyright &copy; Joshua Knight 2024<h3>
       </div>
     </footer>
 
