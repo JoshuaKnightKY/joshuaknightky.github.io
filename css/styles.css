@@ -18,11 +18,6 @@ html {
   overflow: hidden;
 }
 
-header {
-  padding: 154px 0 100px;
-  background-color: #FFFFFF;
-}
-
 .castoro-regular {
   font-family: "Castoro", serif;
   font-weight: 400;
@@ -91,13 +86,6 @@ a:hover {
 }
 .regular-wrapper {
     width: 100vw;
-    height:100vh;
-}
-.content {
-    margin: 0 auto;
-    padding: 50px;
-    width: 50%;
-    background: #aaa;
 }
 
 .parallax-wrapper::before {
@@ -107,6 +95,7 @@ a:hover {
     top:0;
     left:0;
     background-image: url("../images/jumbotron-ortho.jpg");
+    background-size: 100vw;
     position: absolute;
     z-index: -1;
 }
@@ -119,10 +108,7 @@ a:hover {
   transform:translateZ(-1px) scale(2);
 }
 
-.regular-wrapper {
-    z-index: 2;
-    position: relative;
-}
+
 
 /* media query when the media is wider than 992px */
 @media (min-width: 992px) {
