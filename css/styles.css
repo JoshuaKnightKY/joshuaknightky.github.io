@@ -9,13 +9,21 @@ body {
    font-weight: 100;
    height: 100vh;
    perspective: 1px;
-   transform-style: preserve-3d;
+   /* transform-style: preserve-3d; */
    overflow-x:hidden;
    overflow-y:auto;
 }
 
 html {
-  overflow: hidden;
+  overflow: auto;
+}
+
+.navbar {
+  transform:translateZ(-0px) scale(1);
+}
+
+.title {
+  transform:translateZ(-2px) scale(3);
 }
 
 .castoro-regular {
@@ -32,14 +40,14 @@ html {
 
 h1 {
     color: #000000;
-    font-family: "Castoro", serif; !important;
-    font-weight: 400; !important;
-    font-style: normal; !important;
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h2 {
     color: #e5e5e5;
-    font-family: "Castoro", cursive;
+    font-family: "Castoro", serif;
     font-weight: 400;
     font-size: 200%;
     font-style: normal;
@@ -48,7 +56,7 @@ h2 {
 
 h3 {
     color: #023047;
-    font-family: "Castoro", cursive;
+    font-family: "Castoro", serif;
     font-weight: 200;
     font-size: 100%;
     font-style: normal;
@@ -56,7 +64,7 @@ h3 {
 
 h6 {
     color: #FFFFFF;
-    font-family: "Castoro", serif;
+    font-family: "Patrick Hand SC", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 400%;
@@ -64,15 +72,18 @@ h6 {
 }
 
 h7 {
+    font-weight: 400;
+    font-family: "Castoro", serif;
+    font-size: 100%;
     text-shadow: 1.5px 1.5px #000000;
 }
 
 a {
-  color: #2176ae; !important;
-  font-weight: bold; !important;
-  font-size: 110%; !important;
-  font-family: "Castoro", cursive; !important;
-  text-decoration: none; !important;
+  color: #2176ae;
+  font-weight: bold;
+  font-size: 110%;
+  font-family: "Castoro", serif;
+  text-decoration: none;
 }
 
 a:hover {
@@ -83,32 +94,27 @@ a:hover {
 .parallax-wrapper {
     width: 100vw;
     height:100vh;
+    transform-style: preserve-3d;
 }
+
 .regular-wrapper {
     width: 100vw;
+    transform:translateZ(0px) scale(1);
+    z-index: 1;
 }
 
 .parallax-wrapper::before {
     content:"";
     width: 100vw;
-    height: 100vh;
+    height: 185vh;
     top:0;
     left:0;
     background-image: url("../images/jumbotron-ortho.jpg");
+    transform:translateZ(-9px) scale(10);
     background-size: 100vw;
     position: absolute;
     z-index: -1;
 }
-
-.parallax-wrapper {
-  transform-style: preserve-3d;
-}
-
-.parallax-wrapper::before {
-  transform:translateZ(-1px) scale(2);
-}
-
-
 
 /* media query when the media is wider than 992px */
 @media (min-width: 992px) {
@@ -125,4 +131,4 @@ section {
   padding: 80px 0;
 }
 
-background-image: var(--bs-gradient);
+/* background-image: var(--bs-gradient); */
