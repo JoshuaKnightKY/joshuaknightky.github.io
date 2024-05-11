@@ -18,10 +18,6 @@ html {
   overflow: auto;
 }
 
-.navbar {
-  transform:translateZ(-0px) scale(1);
-}
-
 .title {
   transform:translateZ(-2px) scale(3);
 }
