@@ -20,6 +20,7 @@ html {
 
 .title {
   transform:translateZ(-2px) scale(3);
+  align-self: center;
 }
 
 .castoro-regular {
@@ -102,12 +103,14 @@ a:hover {
 .parallax-wrapper::before {
     content:"";
     width: 100vw;
-    height: 185vh;
-    top:0;
+    height: 180vh;
+    top:20;
     left:0;
     background-image: url("../images/jumbotron-ortho.jpg");
     transform:translateZ(-9px) scale(10);
-    background-size: 100vw;
+    /* background-size: 100vw; */
+    background-repeat:no-repeat;
+     background-size:cover;
     position: absolute;
     z-index: -1;
 }
