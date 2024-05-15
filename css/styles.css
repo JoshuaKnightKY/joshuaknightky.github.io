@@ -104,13 +104,13 @@ a:hover {
     content:"";
     width: 100vw;
     height: 180vh;
-    top:20;
+    top:100px;
     left:0;
-    background-image: url("../images/jumbotron-ortho.jpg");
+    background-image: url("../images/jumbotron-ortho_2.jpg");
     transform:translateZ(-9px) scale(10);
-    /* background-size: 100vw; */
-    background-repeat:no-repeat;
-     background-size:cover;
+    background-size: 100vw;
+    /* background-repeat:repeat-y; */
+    background-size:cover;
     position: absolute;
     z-index: -1;
 }
