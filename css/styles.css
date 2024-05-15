@@ -60,7 +60,7 @@ h3 {
 }
 
 h6 {
-    color: #FFFFFF;
+    color: #f2f2f2;
     font-family: "Castoro", serif;
     font-weight: 400;
     font-style: normal;
@@ -69,10 +69,14 @@ h6 {
 }
 
 h7 {
-    font-weight: 400;
+    color: #f2f2f2;
+    font-weight: bolder;
     font-family: "Castoro", serif;
-    font-size: 100%;
-    text-shadow: 1.5px 1.5px #000000;
+    font-size: 120%;
+    font-kerning: normal;
+    text-decoration: underline overline;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 3px #000000;
 }
 
 a {
