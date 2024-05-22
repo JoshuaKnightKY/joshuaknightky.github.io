@@ -119,6 +119,38 @@ a:hover {
     z-index: -1;
 }
 
+.icon-download {
+  mask: url(../images/icons/download.svg);
+}
+.icon-printer {
+  mask: url(../images/icons/printer-fill.svg);
+}
+.icon-online {
+  mask: url(../images/icons/display.svg);
+}
+.icon-interactive {
+  mask: url(../images/icons/controller.svg);
+}
+.icon-mobile {
+  mask: url(../images/icons/phone.svg);
+}
+
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: black;
+  mask-size: cover;
+}
+.icon:hover,
+.icon:focus {
+  background: blue;
+}
+
+
+
+
 /* media query when the media is wider than 992px */
 @media (min-width: 992px) {
   header {
